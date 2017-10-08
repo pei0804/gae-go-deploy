@@ -6,6 +6,7 @@ RUN apk --no-cache --update add \
   git \
   make \
   rsync \
+  mercurial \
   python \
 ;
 
@@ -13,7 +14,7 @@ ENV \
   CGO_ENABLED="0" \
   GOPATH="/usr/local/go_appengine/gopath" \
   GOROOT="/usr/local/go_appengine/goroot-1.8" \
-  PATH="/usr/local/go_appengine:/usr/local/go_appengine/goroot/bin:/usr/local/go/bin:$PATH"
+  PATH="/usr/local/go_appengine:/usr/local/go_appengine/goroot/bin:/usr/local/go/bin:/usr/local/go_appengine/gopath/bin:$PATH"
 
 RUN gae_version="1.9.57" \
   ; go_version="1.8.3" \
