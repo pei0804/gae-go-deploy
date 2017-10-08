@@ -7,6 +7,7 @@ RUN apk --no-cache --update add \
   make \
   rsync \
   mercurial \
+  yarn \
   python \
 ;
 
